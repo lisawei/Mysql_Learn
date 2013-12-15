@@ -1,12 +1,12 @@
 use school;
 select * from student;
-
+--view the student table
 select count(*) from student;
-
+-- count of student
 select avg(age) from student;
-
+-- average of age
 select age, count(age) from student group by age order by age desc;
-
+--list count of each age by desc
 select avg(score),max(score),min(score) from grade;
 
 select subject,max(score),min(score),avg (score) from grade group by subject;
