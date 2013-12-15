@@ -29,3 +29,18 @@ mysql> show engines
 6 rows in set (0.00 sec)
 
 ```
+
+
+<h3>mysqldump learn</h3>
+
+```
+pwd:current directory
+
+mysqldump -u root -h localhost school>/Users/liuzheng/youku/lisa/sql_learn/school.sql
+
+-u:is username
+-h:is host
+-p: passowrd
+
+> 从定向 语法： database > database.sql
+```
