@@ -35,5 +35,10 @@ where subject='english' order by score desc limit 1 offset 1;
 select name, sum(score) as sum_score from student inner join grade on student.id=grade.student_id
 group by name order by sum_score;
 
+create index index_name on student (name);
+
+
+
+
 
 
