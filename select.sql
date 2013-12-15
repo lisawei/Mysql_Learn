@@ -29,3 +29,6 @@ select age from student where age>30;
 select name,age,subject,score from student inner join grade on student.id=grade.student_id
 where age>30 and subject ='english' and score>70;
 
+select name, score, subject from student inner join grade on student.id=grade.student_id
+where subject='english' order by score desc limit 1 offset 1;
+
